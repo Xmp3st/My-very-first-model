@@ -94,7 +94,7 @@ with torch.no_grad():
         total += labels.size(0)
         correct += (predicted == labels).sum().item()
     acc = correct / total
-    print(f'Accuracy of the model on the 10000 test images: {100 * acc:.4f}%')
+    print(f'Accuracy of the model on the 10000 test images: {100 * acc:.2f}%')
 
 # 保存模型
 if acc > pre_acc:
